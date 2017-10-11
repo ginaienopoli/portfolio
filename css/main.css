@@ -43,6 +43,16 @@
 
 }
 
+/* p5 */
+#iframe
+{
+    position : absolute;
+    top      : -100px;
+    left     : -100px;
+    width    : 1280px;
+    height   : 1200px;
+}
+
 .lightbox a { 
   color: #fff;
   text-decoration: none; 
