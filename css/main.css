@@ -43,16 +43,6 @@
 
 }
 
-/* p5 */
-#iframe
-{
-    position : absolute;
-    top      : -100px;
-    left     : -100px;
-    width    : 1280px;
-    height   : 1200px;
-}
-
 .lightbox a { 
   color: #fff;
   text-decoration: none; 
@@ -88,6 +78,21 @@
 .next { right: 10px; text-align: right; }
 
 .next::before { content: '\203A'; }
+
+/* p5 */
+#iframe
+{
+    position : absolute;
+    top      : -100px;
+    left     : -100px;
+    width    : 1280px;
+    height   : 1200px;
+}
+
+.our-story wow fadeInUp{
+    overflow : hidden;
+    position : relative;
+}
 
 
 /* =Common Styles
