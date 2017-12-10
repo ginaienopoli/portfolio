@@ -79,20 +79,23 @@
 
 .next::before { content: '\203A'; }
 
-/* p5 */
-#iframe
-{
-    position : absolute;
-    top      : -100px;
-    left     : -100px;
-    width    : 1280px;
-    height   : 1200px;
+/*Iframe*/
+#iframe{
+    margin-top: 50%;
+    margin-bottom: 20px; 
+    margin-left: 5.5%;
+    position: absolute;
+    
 }
 
-.our-story wow fadeInUp{
-    overflow : hidden;
-    position : relative;
+#iframe1{
+    margin-top: 100%;
+    margin-bottom: 20px; 
+    margin-left: 5.5%;
+    position: absolute;
+    
 }
+
 
 
 /* =Common Styles
@@ -2874,7 +2877,7 @@ ul.social-buttons li {
     font-weight: 500;
     letter-spacing: 2pt;
     float: right;
-    margin: 0px -137% 10px 90px;
+    margin: 0px -490px 10px 90px; 
 }
 .contact-form input,
 .contact-form textarea {
