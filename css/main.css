@@ -1716,6 +1716,7 @@ ul.sub-menu li a {
     display: table-cell;
     vertical-align: middle;
     padding: 10px;
+    margin-top: 20%;
 }
 .our-story-image img {
     max-width: 100%;
