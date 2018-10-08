@@ -527,7 +527,7 @@ ul.sublist {
 .logo {
     float: left;
     line-height: 100px;
-    width: 50%;
+    width: auto;
     height: auto;
 }
 
