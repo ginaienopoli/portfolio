@@ -409,8 +409,8 @@
   background: #000;
 }
 
-.gprev,
-.gnext,
+/* .gprev,
+.gnext, */
 .gclose {
   z-index: 99999;
   cursor: pointer;
@@ -432,8 +432,8 @@
   flex-direction: column;
 }
 
-.gprev svg,
-.gnext svg,
+/* .gprev svg,
+.gnext svg, */
 .gclose svg {
   display: block;
   width: 25px;
@@ -442,14 +442,14 @@
   padding: 0;
 }
 
-.gprev.disabled,
-.gnext.disabled,
+/* .gprev.disabled,
+.gnext.disabled, */
 .gclose.disabled {
   opacity: 0.1;
 }
 
-.gprev .garrow,
-.gnext .garrow,
+/* .gprev .garrow,
+.gnext .garrow, */
 .gclose .garrow {
   stroke: #fff;
 }
@@ -462,8 +462,8 @@ iframe.wait-autoplay {
   opacity: 0;
 }
 
-.glightbox-closing .gnext,
-    .glightbox-closing .gprev,
+/* .glightbox-closing .gnext,
+    .glightbox-closing .gprev, */
     .glightbox-closing .gclose {
   opacity: 0 !important;
 }
@@ -499,20 +499,20 @@ iframe.wait-autoplay {
   background: #000;
 }
 
-.glightbox-clean .gprev,
-    .glightbox-clean .gnext,
+/* .glightbox-clean .gprev,
+    .glightbox-clean .gnext, */
     .glightbox-clean .gclose {
   background-color: rgba(0, 0, 0, 0.75);
   border-radius: 4px;
 }
 
-.glightbox-clean .gprev path,
-.glightbox-clean .gnext path,
+/* .glightbox-clean .gprev path,
+.glightbox-clean .gnext path, */
 .glightbox-clean .gclose path {
   fill: #fff;
 }
 
-.glightbox-clean .gprev {
+/* .glightbox-clean .gprev {
   position: absolute;
   top: -100%;
   left: 30px;
@@ -526,7 +526,7 @@ iframe.wait-autoplay {
   right: 30px;
   width: 40px;
   height: 50px;
-}
+} */
 
 .glightbox-clean .gclose {
   width: 35px;
@@ -878,22 +878,22 @@ iframe.wait-autoplay {
     height: 100%;
     overflow-y: auto;
   }
-  .glightbox-clean .gprev,
-    .glightbox-clean .gnext,
+  /* .glightbox-clean .gprev,
+    .glightbox-clean .gnext, */
     .glightbox-clean .gclose {
     background-color: rgba(0, 0, 0, 0.32);
   }
-  .glightbox-clean .gprev:hover,
-.glightbox-clean .gnext:hover,
+  /* .glightbox-clean .gprev:hover,
+.glightbox-clean .gnext:hover, */
 .glightbox-clean .gclose:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
-  .glightbox-clean .gprev {
+  /* .glightbox-clean .gprev {
     top: 45%;
   }
   .glightbox-clean .gnext {
     top: 45%;
-  }
+  } */
 }
 
 @media (min-width: 992px) {

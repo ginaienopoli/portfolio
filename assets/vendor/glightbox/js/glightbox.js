@@ -2489,7 +2489,7 @@
     }
   };
   defaults.slideHTML = "<div class=\"gslide\">\n    <div class=\"gslide-inner-content\">\n        <div class=\"ginner-container\">\n            <div class=\"gslide-media\">\n            </div>\n            <div class=\"gslide-description\">\n                <div class=\"gdesc-inner\">\n                    <h4 class=\"gslide-title\"></h4>\n                    <div class=\"gslide-desc\"></div>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>";
-  defaults.lightboxHTML = "<div id=\"glightbox-body\" class=\"glightbox-container\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"false\">\n    <div class=\"gloader visible\"></div>\n    <div class=\"goverlay\"></div>\n    <div class=\"gcontainer\">\n    <div id=\"glightbox-slider\" class=\"gslider\"></div>\n    <button class=\"gclose gbtn\" aria-label=\"Close\" data-taborder=\"3\">{closeSVG}</button>\n    <button class=\"gprev gbtn\" aria-label=\"Previous\" data-taborder=\"2\">{prevSVG}</button>\n    <button class=\"gnext gbtn\" aria-label=\"Next\" data-taborder=\"1\">{nextSVG}</button>\n</div>\n</div>";
+  defaults.lightboxHTML = "<div id=\"glightbox-body\" class=\"glightbox-container\" tabindex=\"-1\" role=\"dialog\" aria-hidden=\"false\">\n    <div class=\"gloader visible\"></div>\n    <div class=\"goverlay\"></div>\n    <div class=\"gcontainer\">\n    <div id=\"glightbox-slider\" class=\"gslider\"></div>\n    <button class=\"gclose gbtn\" aria-label=\"Close\" data-taborder=\"3\">{closeSVG}</button>\n</div>";
 
   var GlightboxInit = function () {
     function GlightboxInit() {
@@ -3276,8 +3276,8 @@
         var modal = document.getElementById('glightbox-body');
         this.modal = modal;
         var closeButton = modal.querySelector('.gclose');
-        this.prevButton = modal.querySelector('.gprev');
-        this.nextButton = modal.querySelector('.gnext');
+        // this.prevButton = modal.querySelector('.gprev');
+        // this.nextButton = modal.querySelector('.gnext');
         this.overlay = modal.querySelector('.goverlay');
         this.loader = modal.querySelector('.gloader');
         this.slidesContainer = document.getElementById('glightbox-slider');
@@ -3323,18 +3323,18 @@
           });
         }
 
-        if (this.settings.closeOnOutsideClick) {
-          this.events['outClose'] = addEvent('click', {
-            onElement: modal,
-            withCallback: function withCallback(e, target) {
-              if (!_this7.preventOutsideClick && !hasClass(document.body, 'glightbox-mobile') && !closest(e.target, '.ginner-container')) {
-                if (!closest(e.target, '.gbtn') && !hasClass(e.target, 'gnext') && !hasClass(e.target, 'gprev')) {
-                  _this7.close();
-                }
-              }
-            }
-          });
-        }
+        // if (this.settings.closeOnOutsideClick) {
+        //   this.events['outClose'] = addEvent('click', {
+        //     onElement: modal,
+        //     withCallback: function withCallback(e, target) {
+        //       if (!_this7.preventOutsideClick && !hasClass(document.body, 'glightbox-mobile') && !closest(e.target, '.ginner-container')) {
+        //         if (!closest(e.target, '.gbtn') && !hasClass(e.target, 'gnext') && !hasClass(e.target, 'gprev')) {
+        //           _this7.close();
+        //         }
+        //       }
+        //     }
+        //   });
+        // }
 
         each(this.elements, function (slide, i) {
           _this7.slidesContainer.appendChild(slide.instance.create());
